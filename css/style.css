@@ -114,7 +114,11 @@ body{
     font-size: .9rem;
 }
 @media(max-width: 375px){
+    .container{
+        width: 350px;
+    }
     .down-content{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }
