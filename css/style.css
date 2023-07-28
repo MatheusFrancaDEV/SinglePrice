@@ -3,7 +3,9 @@
 :root{
     ---font-principal: 'Karla', sans-serif;
     ---cyan: hsl(179, 62%, 43%);
-    ---bright: hsl(71, 73%, 54%);
+    ---cyan-bright: hsl(179, 58%, 53%);
+    ---bright-yellow: hsl(71, 73%, 54%);
+    ---light: hsl(0, 0%, 100%);
     ---light-gray: hsl(204, 43%, 93%);
     ---grayish-blue: hsl(218, 22%, 67%);
 }
@@ -12,4 +14,107 @@
     margin: 0;
     padding: 0;
     font-family: var(---font-principal);
+}
+body{
+    background-color: var(---light-gray);
+}
+.container{
+    display: flex;
+    align-items: center;
+    margin: 150px auto;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 8px;
+    max-width: 650px;
+    background-color: var(---light);
+    overflow: hidden;
+}
+.top-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    padding: 2rem;
+}
+.top-content h1{
+    color: var(---cyan);
+}
+.top-content span{
+    color: var(---bright-yellow);
+    font-weight: 700;
+}
+.top-content p{
+    color: var(---grayish-blue);
+    font-size: 1rem;
+}
+.down-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+}
+.price-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(---cyan);
+    gap: .5rem;
+    width: 300px;
+    padding: 2rem;
+}
+.price-content h2{
+    color: var(---light);
+}
+.price-content .price strong{
+    color: var(---light);
+    font-size: 2rem;
+}
+.price-content .price span{
+    color: var(---light-gray);
+    font-size: .8rem;
+    margin-left: .4rem;
+}
+.price-content span{
+    color: var(---light);
+    margin-block-end: .6rem;
+}
+#sign-up{
+    background-color: var(---bright-yellow);
+    width: 280px;
+    padding: 1.1rem 0;
+    color: var(---light);
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.178);
+    transition: .3s;
+}
+#sign-up:hover{
+    background-color: hsl(71, 57%, 40%);
+    cursor: pointer;
+}
+.more-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(---cyan-bright);
+    gap: .5rem;
+    width: 300px;
+    padding: 2rem;
+}
+.more-infos h3{
+    color: var(---light);
+    padding: .4rem 0;
+}
+.more-infos ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    color: var(---light);
+    font-size: .9rem;
+}
+@media(max-width: 375px){
+    .down-content{
+        display: block;
+    }
 }
