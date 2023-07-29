@@ -113,7 +113,7 @@ body{
     color: var(---light);
     font-size: .9rem;
 }
-@media(max-width: 380px){
+@media(max-width: 506px){
     .container{
         width: 350px;
     }
